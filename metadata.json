@@ -1,0 +1,6 @@
+{
+  "name": "Constructora Seingenia - Obras Civiles e Infraestructura",
+  "description": "Sitio web de Constructora Seingenia. Obras civiles e infraestructura empresarial en la Región Metropolitana con continuidad operativa garantizada.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

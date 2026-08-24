@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-inter);
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Montserrat: Titles, Headings, Work Names */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-montserrat);
+    letter-spacing: -0.015em;
+  }
+
+  /* Montserrat: Buttons and Navigation Menus */
+  button, nav, nav button, nav a, .font-heading, .font-montserrat {
+    font-family: var(--font-montserrat);
+  }
+
+  /* Inter: Text descriptions, paragraphs, forms, technical data, contact info, secondary text */
+  p, label, input, select, textarea, form, .font-body, .font-inter {
+    font-family: var(--font-inter);
+  }
+
+  /* Strictly map font-mono to Inter with tabular numbers to prevent loading any 3rd font */
+  code, pre, .font-mono {
+    font-family: var(--font-inter);
+    font-feature-settings: "tnum" 1, "cv05" 1;
+  }
+}
+
+/* Specific Font Classes */
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif !important;
+}
+
+.font-heading {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.font-body {
+  font-family: 'Inter', sans-serif !important;
+}
+
+@layer components {
+  /* Formal construction CTA button in Amarillo Grisáceo / Muted Gold Amber using Montserrat */
+  .btn-cta-gold {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #c29b38;
+    color: #0f172a;
+    font-weight: 700;
+    border: 1px solid #a8832a;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  }
+  .btn-cta-gold:hover {
+    background-color: #b08b2e;
+    border-color: #967422;
+  }
+}
